@@ -1,0 +1,36 @@
+{
+  // 適用する環境
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "commonjs": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "17.0.0"
+    }
+  },
+  "plugins": ["react-hooks", "react", "@typescript-eslint"],
+  // 基本的にルールは recommended に従う
+  // prettier は配列の最後尾に書く
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "react/prop-types": "off"
+  }
+}

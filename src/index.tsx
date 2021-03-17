@@ -1,7 +1,7 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 ReactDOM.render(
-    <div>Hello Preact</div>,
-    document.getElementById("app")!
-)
+  <div>Hello Preact</div>,
+  document.getElementById('app') as HTMLElement
+);
